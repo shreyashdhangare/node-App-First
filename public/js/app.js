@@ -1,5 +1,4 @@
 console.log("Client style js is loaded");
-console.log("This looks soo cool")
 
 
 
