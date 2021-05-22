@@ -6,6 +6,7 @@ const forecast = require('./utils/forecast');
 
 
 const app = express();
+const port = process.env.PORT || 5050
 
 //Define paths for express Config
 const publicDirPath = path.join(__dirname, '../public')
@@ -100,6 +101,8 @@ app.get('*', (req, res) => {
     res.send("My 404 Page")
 })
 
-app.listen(5050, () => {
-    console.log("Server is Up and running on 5050!!!");
+
+
+app.listen(port, () => {
+    console.log("Server is Up and running on " + port);
 })
